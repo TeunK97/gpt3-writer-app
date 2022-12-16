@@ -67,61 +67,36 @@ body {
 }
 
 .prompt-container {
-    place-content: flex-end center;
-    align-items: center;
-    display: flex;
-    flex: 0 0 auto;
-    flex-flow: column nowrap;
-    gap: 16px;
-    height: min-content;
+    display: grid;
     padding: 0px;
-    width: min-content;
-}
-
-.prompt-box {
-    border-bottom-width: 1px;
-    border-color: rgba(255, 255, 255, 0.1);
-    border-left-width: 1px;
-    border-right-width: 1px;
-    border-style: solid;
-    border-top-width: 1px;
-    place-content: flex-start;
-    align-items: flex-start;
-    background-color: rgba(255, 255, 255, 0.05);
-    border-radius: 16px;
-    display: flex;
-    flex: 0 0 auto;
-    flex-flow: column nowrap;
+    width: auto;
+    grid-template-columns: auto auto;
+    grid-auto-rows: minmax(100px, auto);
     gap: 10px;
-    height: 150px;
-    overflow: hidden;
+}
+
+.prompt-item {
+    border: 10px solid rgba(0, 0, 0, 0.8);
     padding: 20px;
-    position: relative;
-    width: 610px;
-    max-width: 1200px;
-    will-change: transform;
-    overflow: auto;
-    outline: none;
-    resize: none;
-    font-size: 16px;
-    font-style: normal;
-    letter-spacing: 0px;
-    line-height: 1.6em;
-    text-align: start;
-    color: rgba(255, 255, 255, 0.75);
-    text-decoration: none;
-    text-transform: none;
+    text-align: center;
 }
 
-textarea {
+label {
     font-family: 'Manrope', sans-serif;
+    color: rgba(255, 255, 255, 0.75);
 }
 
-
-.prompt-box:focus {
-    border-color:rgba(255, 255, 255, 0.75)
+input {
+    background-color: rgba(255, 255, 255, 0.05);
+    font-family: 'Manrope', sans-serif;
+    color: rgba(255, 255, 255, 0.75);
 }
 
+select {
+    background-color: rgba(255, 255, 255, 0.05);
+    font-family: 'Manrope', sans-serif;
+    color: rgba(255, 255, 255, 0.75);
+}
 
 .prompt-buttons {
     display: flex;

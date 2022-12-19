@@ -67,18 +67,19 @@ body {
 }
 
 .prompt-container {
-    display: grid;
+    display: flex;
     padding: 0px;
     width: auto;
     grid-template-columns: auto auto;
     grid-auto-rows: minmax(100px, auto);
     gap: 10px;
+    flex-direction: column;
 }
 
 .prompt-item {
     border: 10px solid rgba(0, 0, 0, 0.8);
     padding: 20px;
-    text-align: center;
+    text-align: left;
 }
 
 label {
@@ -255,6 +256,7 @@ select {
     overflow: hidden;
     position: relative;
     width: 100%;
+    padding: 60px;
 }
 
 .output-header-container {
@@ -300,6 +302,18 @@ select {
     white-space: pre-line;
     color: rgba(255, 255, 255, 0.5);
 }
+
+.linkedin-button {
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #0077b5;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
 
 @media (min-width: 810px) and (max-width: 1199px) {
     .container {

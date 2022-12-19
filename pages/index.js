@@ -54,70 +54,73 @@ const Home = () => {
             <h1>The LinkedIn Milestone Generator for Students</h1>
           </div>
           <div className="header-subtitle">
-            <h2>For anyone without inspiration, but still wants to post something on LinkedIn.</h2>
+            <h2>For anyone without inspiration, but still wants to post something on LinkedIn. Note that it may take some time to process your submission.
+            </h2>
           </div>
         </div>
       </div>
       
       <div className="prompt-container">
-        <form onSubmit={handleSubmit}>
-          
-          <div className="prompt-item-1">
-            <label htmlFor="context1">University:</label>
-            <input type="text" name="context1" onChange={handleChange} />
-          </div>
+          <div className="prompt-container2">
+          <form onSubmit={handleSubmit}>
+            
+            <div className="prompt-item-1">
+              <label htmlFor="context1">University:</label>
+              <input type="text" name="context1" onChange={handleChange} />
+            </div>
 
-          <div className="prompt-item-2">
-            <label htmlFor="context2">Milestone:</label>
-            <input type="text" name="context2" onChange={handleChange} />
-          </div>
+            <div className="prompt-item-2">
+              <label htmlFor="context2">Milestone:</label>
+              <input type="text" name="context2" onChange={handleChange} />
+            </div>
 
-          <div className="prompt-item-3">
-            <label htmlFor="context3">Thesis title:</label>
-            <input type="text" name="context3" onChange={handleChange} />
-          </div>
+            <div className="prompt-item-3">
+              <label htmlFor="context3">Thesis title:</label>
+              <input type="text" name="context3" onChange={handleChange} />
+            </div>
 
-          <div className="prompt-item-4">
-            <label htmlFor="context4">Thesis supervisor:</label>
-            <input type="text" name="context4" onChange={handleChange} />
-          </div>
+            <div className="prompt-item-4">
+              <label htmlFor="context4">Thesis supervisor:</label>
+              <input type="text" name="context4" onChange={handleChange} />
+            </div>
 
-          <div className="prompt-item-5">
-            <label htmlFor="context 6"> What is next?:
-              <select name="context6" onChange={handleChange}>
-                <option value="Internship">Internship</option>
-                <option value="New job">New job</option>
-                <option value="Looking for jobs">Looking for jobs, next field fill in Yes or No</option>
-              </select>
-            </label>
-          </div> 
-          
-          <div className="prompt-item-6">
-            <label htmlFor="context7">Internship/job position and organisation/company:</label>
-            <input type="text" name="context7" onChange={handleChange} />
-          </div>
+            <div className="prompt-item-5">
+              <label htmlFor="context 6"> What is next?:
+                <select name="context6" onChange={handleChange}>
+                  <option value="Internship">Internship</option>
+                  <option value="New job">New job</option>
+                  <option value="Looking for jobs">Looking for jobs, next field fill in Yes or No</option>
+                </select>
+              </label>
+            </div> 
+            
+            <div className="prompt-item-6">
+              <label htmlFor="context7">Internship/job position and organisation/company:</label>
+              <input type="text" name="context7" onChange={handleChange} />
+            </div>
 
 
-          <div className="prompt-item-7">
-            <label htmlFor="context5">Challenge during study, e.g. Corona, breakup, etc.:</label>
-            <input type="text" name="context5" onChange={handleChange} />
-          </div>
-          
-          <div className="prompt-item-8">
-            <label htmlFor="context8">The tone of voice of the post, e.g. serious, funny, etc.:</label>
-            <input type="text" name="context8" onChange={handleChange} />
-          </div>
+            <div className="prompt-item-7">
+              <label htmlFor="context5">Challenge during study, e.g. Corona, breakup, etc.:</label>
+              <input type="text" name="context5" onChange={handleChange} />
+            </div>
+            
+            <div className="prompt-item-8">
+              <label htmlFor="context8">The tone of voice of the post, e.g. serious, funny, etc.:</label>
+              <input type="text" name="context8" onChange={handleChange} />
+            </div>
 
-          <div className="prompt-buttons">
-              <a 
-                className= {isGenerating ? 'generate-button loading' : 'generate-button'}
-                onClick= {callGenerateEndpoint}>
-                <div className="generate">
-                  {isGenerating ? <span className="loader"></span> : <p>Generate</p>}
-                </div>
-              </a>
-          </div>
-        </form>
+            <div className="prompt-buttons">
+                <a 
+                  className= {isGenerating ? 'generate-button loading' : 'generate-button'}
+                  onClick= {callGenerateEndpoint}>
+                  <div className="generate">
+                    {isGenerating ? <span className="loader"></span> : <p>Generate</p>}
+                  </div>
+                </a>
+            </div>
+          </form>
+        </div>
         {apiOutput && (
             <div className='output'>
               <div className="output-header-container">
@@ -128,7 +131,7 @@ const Home = () => {
               <div className="output-content">
                 <p>{apiOutput}</p>
               </div>
-            </div>
+      </div>
         )}
       </div>
     <div className="badge-container grow">

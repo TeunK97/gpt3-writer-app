@@ -33,7 +33,16 @@ const generateAction = async (req, res) => {
       });
   
       const basePromptOutput = baseCompletion.data.choices.pop();
-      res.status(200).json({ output: basePromptOutput });
+
+      const fixedGrammarEdit = await openai.createEdit({
+        model : "text-davinci-edit-001",
+        input : `${basePromptOutput.text}`,
+        instruction : "Fix the spelling and grammar.",
+      });
+
+      const fixedGrammarOutput = fixedGrammarEdit.data.choices.pop();
+
+      res.status(200).json({ output: fixedGrammarOutput });
     } catch (error) {
         res.status(500).json({ error: error.message });
       }

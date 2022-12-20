@@ -70,7 +70,7 @@ const Home = () => {
             </div>
 
             <div className="prompt-item-2">
-              <label htmlFor="context2">Milestone:</label>
+              <label htmlFor="context2">Degree title:</label>
               <input type="text" name="context2" onChange={handleChange} />
             </div>
 

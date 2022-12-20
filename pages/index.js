@@ -51,10 +51,10 @@ const Home = () => {
       <div className="container">
         <div className="header">
           <div className="header-title">
-            <h1>The LinkedIn Milestone Generator for Students</h1>
+            <h1>The LinkedIn Milestone Post Generator for Students</h1>
           </div>
           <div className="header-subtitle">
-            <h2>For anyone without inspiration, but still wants to post something on LinkedIn. Note that it may take some time to process your submission.
+            <h2>Achieve greatness (or atleast pretend to) with the LinkedIn Milestone Post Generator
             </h2>
           </div>
         </div>

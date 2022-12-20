@@ -104,11 +104,6 @@ const Home = () => {
               <label htmlFor="context5">Challenge during study, e.g. Corona, breakup, etc.:</label>
               <input type="text" name="context5" onChange={handleChange} />
             </div>
-            
-            <div className="prompt-item-8">
-              <label htmlFor="context8">The tone of voice of the post, e.g. serious, funny, etc.:</label>
-              <input type="text" name="context8" onChange={handleChange} />
-            </div>
 
             <div className="prompt-buttons">
                 <a 

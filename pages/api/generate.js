@@ -16,12 +16,12 @@ const generateAction = async (req, res) => {
       Thesis title: ${context.context3} \n
       Put your thesis title in quotations and explain the skills you have learned during your study.\n
       Thesis supervisor: ${context.context4} \n
-      Mention the characteristics of the supervisor that were inspiring to you and made him/her a great guide during the thesis. \n
+      Mention the characteristics of the supervisor that were inspiring to you and what made him/her a great guide during your thesis. \n
       Challenge during study: ${context.context5} \n
       Write about the impact this challenge had on your study. \n
       ${context.context6} : ${context.context7} \n
       Mention what made you choose for this ${context.context6} \n
-      Use LinkedIn style (use emoji's). Make paragraphs, do not title the paragraphs. End with something motivational and hashtags. ${context.context8} tone of voice
+      Use LinkedIn style (use emoji's). Make paragraphs, do not title the paragraphs. End with a motivational sentence and hashtags. Use a serious tone of voice.
     `;
   
     try {

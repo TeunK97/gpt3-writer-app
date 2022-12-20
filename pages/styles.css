@@ -85,18 +85,23 @@ body {
 label {
     font-family: 'Manrope', sans-serif;
     color: rgba(255, 255, 255, 0.75);
+    font-size: 17px;
 }
 
 input {
     background-color: rgba(255, 255, 255, 0.05);
     font-family: 'Manrope', sans-serif;
     color: rgba(255, 255, 255, 0.75);
+    font-size: 16px;
+    width: 500px;
 }
 
 select {
     background-color: rgba(255, 255, 255, 0.05);
     font-family: 'Manrope', sans-serif;
     color: rgba(255, 255, 255, 0.75);
+    font-size: 16px;
+    width: 500px;
 }
 
 .prompt-buttons {
@@ -301,6 +306,8 @@ select {
     text-align: center;
     white-space: pre-line;
     color: rgba(255, 255, 255, 0.5);
+    font-size: 15px;
+    width: 550px;
 }
 
 .linkedin-button {

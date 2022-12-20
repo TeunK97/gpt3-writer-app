@@ -14,7 +14,7 @@ const generateAction = async (req, res) => {
       University: ${context.context1}\n
       Milestone: ${context.context2} \n
       Thesis title: ${context.context3} \n
-      Mention the resutls from this theseis and what you personally have learned from it.\n
+      Put your thesis title in quotations and explain the skills you have learned during your study.\n
       Thesis supervisor: ${context.context4} \n
       Mention the characteristics of the supervisor that were inspiring to you and made him/her a great guide during the thesis. \n
       Challenge during study: ${context.context5} \n
@@ -28,8 +28,8 @@ const generateAction = async (req, res) => {
       const baseCompletion = await openai.createCompletion({
         model: 'text-davinci-003',
         prompt: `${basePromptPrefix}\n`,
-        temperature: 0.88,
-        max_tokens: 500,
+        temperature: 1,
+        max_tokens: 700,
       });
   
       const basePromptOutput = baseCompletion.data.choices.pop();

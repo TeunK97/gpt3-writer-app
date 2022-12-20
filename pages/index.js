@@ -131,6 +131,21 @@ const Home = () => {
               <div className="output-content">
                 <p>{apiOutput}</p>
               </div>
+
+              
+              <div className="linkedin-button">
+              <a 
+                href={
+                  `https://www.linkedin.com/feed/?shareActive=true&view=new&text=` 
+                  + encodeURIComponent(apiOutput)
+                } 
+                target="_blank" 
+                class="linkedin-button">
+                  <p>Post on LinkedIn</p>
+              </a>
+              </div>
+
+
       </div>
         )}
       </div>

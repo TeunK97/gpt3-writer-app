@@ -9,7 +9,7 @@ const Home = () => {
     context1:"", context2:"", 
     context3:"", context4:"", 
     context5:"", context6:"", 
-    context7:"", context8:""});
+    context7:""});
   const [apiOutput, setApiOutput] = useState('');
   const [isGenerating, setIsGenerating] = useState(false);
 
